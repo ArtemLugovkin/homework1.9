@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -40,13 +42,37 @@ public class Main {
 
         System.out.println("задание 3.");
 
-        for (int i = numbers.length; i >= 0; i--) {
+        for (int i = numbers.length - 1; i >= 0; i--) {
             if ( i != 0) {
                 System.out.print(numbers[i] + ",");
             } else {
                 System.out.println(numbers[i]);
             }
         }
+        for (int i = doubles.length - 1; i >= 0; i--) {
+            if ( i != 0) {
+                System.out.print(doubles[i] + ",");
+            } else {
+                System.out.println(doubles[i]);
+            }
+        }
+        for (int i = strings.length - 1; i >= 0; i--) {
+            if ( i != 0) {
+                System.out.print(strings[i] + ",");
+            } else {
+                System.out.println(strings[i]);
+            }
+        }
+
+        System.out.println("Здание 4.");
+
+        for (int i=0; i < numbers.length; i++) {
+            if (numbers[i] % 2 != 0) {
+                numbers[i] += 1;
+            }
+        }
+        System.out.println(Arrays.toString(numbers));
+
 
 
 
